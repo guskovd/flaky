@@ -95,7 +95,7 @@ class FlakyPlugin(_FlakyPlugin):
             del self._call_infos[item]
         return True
 
-    def call_and_report(self, item, when, log=True, **kwds):
+    def call_and_report(self, item, when, log=False, **kwds):
         """
         Monkey patched from the runner plugin. Responsible for running
         the test and reporting the outcome.
